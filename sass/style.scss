@@ -1,0 +1,64 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.eye {
+	position: absolute;
+	width: 220px;
+	height: 220px;
+
+
+	.ball {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		
+		background: #fff;
+		border: 3px solid #000;
+		border-radius: 110px;
+
+		
+	}
+	.pupil {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		background: #000;
+		border-radius: 50px;
+
+		transform-origin: 50% 50%;
+	}
+}
+
+#tig-ole-bitties {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 480px;
+	height: 220px;
+	transform: translate(-50%, -50%);
+
+	#lefty {
+		top: 0;
+		left: 0;
+
+		.pupil {
+			top: 125px;
+			left: 75px;
+		}
+	}
+	#righty {
+		top: 0;
+		right: 0;
+
+		.pupil {
+			top: 125px;
+			right: 60px;
+		}
+	}
+}
