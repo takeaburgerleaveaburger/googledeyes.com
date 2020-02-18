@@ -7,6 +7,120 @@ body {
 	overflow: hidden;
 }
 
+body {
+	font-family: 'Helevetica Neue', Helvetica-Neue, Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 1106px;
+	height: 88px;
+
+	form {
+		display: flex;
+		position: absolute;
+		top: 20px;
+		margin-left: -22px;
+		height: 48px;
+
+		input {
+			display: block;
+			// margin-left: 27px;
+			padding: 0 24px;
+			width: 638px;
+			height: 44px;
+			line-height: 48px;
+			border: 1px solid #ccc;
+			border-radius: 24px;
+			color: rgba(0,0,0,.87);
+
+			font-size: 16px;
+
+			&:focus {
+				outline: none;
+				border-color: rgba(223,225,229,0);
+				box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+			}
+		}
+
+		button {
+			position: relative;
+			top: 1px;
+			margin-left: -45px; // +1 to account for input's border
+
+			width: 44px;
+			height: 44px;
+
+			background: transparent;
+			border: none;
+			border-radius: 22px;
+
+			text-indent: -999em;
+
+			&::before {
+				content: '';
+
+				position: absolute;
+				top: 10px;
+				left: 10px;
+
+				width: calc(100% - 20px);
+				height: calc(100% - 20px);
+
+				background: url(img/icon-search.svg) center center no-repeat;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			&:focus {
+				outline: none;
+				background: rgba(0,0,0,0.22);
+			}
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+header {
+	margin: 0 auto 0 150px;
+	min-width: 1101px;
+	color: #222;
+
+	h1 {
+		font-size: 18px;
+		font-weight: normal;
+
+		a {
+			font-weight: bold;
+		}
+	}
+
+	h2 {
+		font-size: 15px;
+		font-weight: normal;
+	}
+}
+
 .eye {
 	position: absolute;
 	width: 220px;
