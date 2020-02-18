@@ -56,4 +56,4 @@ gulp.task('sync', function(done) {
 
 gulp.task('watch', gulp.parallel('watch:js', 'watch:scss', 'watch:php', 'watch:html'));
 
-gulp.task('default', gulp.series('sync', 'watch'));
+gulp.task('default', gulp.series('styles', 'sync', 'watch'));
