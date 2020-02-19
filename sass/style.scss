@@ -134,17 +134,17 @@ header {
 		height: 100%;
 		
 		background: #fff;
-		border: 3px solid #000;
+		border: 2px solid #000;
 		border-radius: 110px;
 
 		
 	}
 	.pupil {
 		position: absolute;
-		width: 100px;
-		height: 100px;
+		width: 140px;
+		height: 140px;
 		background: #000;
-		border-radius: 50px;
+		border-radius: 70px;
 
 		transform-origin: 50% 50%;
 	}
@@ -163,8 +163,8 @@ header {
 		left: 0;
 
 		.pupil {
-			top: 125px;
-			left: 75px;
+			top: 80px;
+			left: 60px;
 		}
 	}
 	#righty {
@@ -172,8 +172,8 @@ header {
 		right: 0;
 
 		.pupil {
-			top: 125px;
-			right: 60px;
+			top: 80px;
+			right: 50px;
 		}
 	}
 }
